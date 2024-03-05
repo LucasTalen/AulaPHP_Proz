@@ -54,8 +54,11 @@
 
     
         // 
-    }else{
-        echo "oii";
+    }elseif ($_SERVER["REQUEST_METHOD"] == "GET" && !empty($_POST)) {
+        echo "Erro!! Formulario não enviado.";
+    }
+    else{
+        //nada a fazer 
     }
     ?>
 
